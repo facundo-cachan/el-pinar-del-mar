@@ -2,11 +2,11 @@
   <h1>Miyamado Jinja</h1>
   <img src="https://user-images.githubusercontent.com/7563926/72620461-56b0b200-390d-11ea-99a5-9d05cbcebefb.jpg" height="300">
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8c59046e-7740-4aa1-a981-a71fbe5822c1/deploy-status)](https://app.netlify.com/sites/miyamadojinja/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/05f16382-0263-4c35-94e4-171e0b549177/deploy-status)](https://app.netlify.com/sites/el-pinar-del-mar/deploys)
 
 </div>
 
-Miyamado Jinja is a Shinto Shrine located in Yokkaichi, Mie, Japan.
+Facundo Cachan, freelance developer.
 This project was bootstrapped with [Gatsby](https://www.gatsbyjs.org/).
 
 ## 🚀 Quick start
@@ -22,13 +22,13 @@ This project was bootstrapped with [Gatsby](https://www.gatsbyjs.org/).
 Clone this project:
 
 ```
-git clone git@github.com:mnishiguchi/miyamadojinja.git
+git clone git@github.com:facundo-cachan/el-pinar-del-mar.git
 ```
 
 Move to the project directory:
 
 ```
-cd miyamadojinja
+cd el-pinar-del-mar
 ```
 
 Install the website's npm dependencies:
