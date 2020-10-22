@@ -1,6 +1,5 @@
 <div align="center">
-  <h1>Miyamado Jinja</h1>
-  <img src="https://user-images.githubusercontent.com/7563926/72620461-56b0b200-390d-11ea-99a5-9d05cbcebefb.jpg" height="300">
+  <h1>El Pinar Del Mar, Aguas Verdes, Costa Atlantica Argentina</h1>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/05f16382-0263-4c35-94e4-171e0b549177/deploy-status)](https://app.netlify.com/sites/el-pinar-del-mar/deploys)
 
