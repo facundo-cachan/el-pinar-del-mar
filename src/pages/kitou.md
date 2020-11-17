@@ -1,13 +1,13 @@
 ---
 templateKey: blog-post
-title: 御祈祷・出張祭典
+title: Yu reza・出張祭典
 date: 2020-01-13T00:00:00.000Z
 description:
 ---
 
 ![](img/kurumaharai.jpg)
 
-## 御祈祷
+## Yu reza
 
 ご相談に応じ、ご祈願申し上げます。
 

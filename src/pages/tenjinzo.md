@@ -2,11 +2,11 @@
 templateKey: blog-post
 title: みやまど天神菅原社
 date: 2020-01-13T00:00:00.000Z
-description: 日本一の大きさの杉の一木彫刻大天神像（菅原道真公）です。学業・合格・芸術・習い事の上達・ボケ封じなどにご利益がございます。
+description: 日本一の大きさの杉の一木彫刻Gran Estatua de Tenjin（菅原道真公）です。学業・合格・芸術・習い事の上達・ボケ封じなどにご利益がございます。
 featuredimage: /img/tenjinzo.jpg
 ---
 
-![大天神像（菅原道真公）](/img/tenjinzo.jpg)
+![Gran Estatua de Tenjin（菅原道真公）](/img/tenjinzo.jpg)
 
 [菅原道真公](https://ja.wikipedia.org/wiki/%E8%8F%85%E5%8E%9F%E9%81%93%E7%9C%9F)は、学問に大変秀でてられたため「天神さま」と呼び親しまれ、学問の神様として崇敬されています。
 樹齢１５００年、高さ径それぞれ３メートルの大杉との神縁による出会いを経て、平成８年に斧入式。

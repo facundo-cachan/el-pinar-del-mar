@@ -17,34 +17,34 @@ import useSiteMetadata from './useSiteMetadata';
 import LogoLink from './LogoLink';
 import gatsbyLogo from '../img/gatsby.svg';
 
-function AppFooter({ children }) {
+function AppFooter() {
   const { title, email, phone, phoneHref, address, gmap } = useSiteMetadata();
   return (
     <>
       <Segment vertical padded="very" style={{ background: '#f5f6f7' }}>
         <Container>
-          <Header as="h2">お問合せはこちら</Header>
+          <Header as="h2">Consultas</Header>
           <Media query={{ maxWidth: 991 }}>
-            {matches => {
+            {(matches) => {
               return matches ? (
                 <Button.Group fluid>
                   <Button
                     basic
                     color="blue"
                     as="a"
-                    href={`mailto:${email}?subject=ウエブサイトからのお問合せ`}
+                    href={`mailto:${email}?subject=Consultas del sitio web`}
                   >
                     <Icon name="mail" />
-                    Eメール
+                    Email{' '}
                   </Button>
                   <Button basic color="teal" as="a" href={`tel:${phoneHref}`}>
-                    <Icon name="phone" /> お電話
+                    <Icon name="phone" /> Llamar
                   </Button>
                 </Button.Group>
               ) : (
                 <List horizontal divided>
                   <List.Item>
-                    <strong>電話</strong>: {phone}
+                    <strong>Telefono</strong>: {phone}
                   </List.Item>
                   <List.Item>
                     <strong>Email</strong>: {email}
@@ -76,10 +76,11 @@ function AppFooter({ children }) {
               <Grid.Column>
                 <List as="address" link inverted>
                   <List.Item>
-                    鎮座地: <OutboundLink href={gmap}>{address}</OutboundLink>
+                    Direccion:{' '}
+                    <OutboundLink href={gmap}>{address}</OutboundLink>
                   </List.Item>
                   <List.Item>
-                    電話: <a href={`tel:${phoneHref}`}>{phone}</a>
+                    Telefono: <a href={`tel:${phoneHref}`}>{phone}</a>
                   </List.Item>
                   <List.Item>
                     Email: <a href={`mailto:${email}`}>{email}</a>
@@ -115,8 +116,8 @@ function AppFooter({ children }) {
                         </div>
                       </List.Item>
                       <List.Item>
-                        旧サイト:{' '}
-                        <OutboundLink href={`http://www.miyamado-jinja.com`}>
+                        Sitio antiguo:{' '}
+                        <OutboundLink href={'http://www.miyamado-jinja.com'}>
                           http://www.miyamado-jinja.com
                         </OutboundLink>
                       </List.Item>

@@ -8,71 +8,71 @@ import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
 export function GalleryPageTemplate({
-  content,
-  contentComponent,
-  description,
-  title,
-  helmet,
-  snapshots = [],
+	content,
+	contentComponent,
+	description,
+	title,
+	helmet,
+	snapshots = [],
 }) {
-  const PostContent = contentComponent || Content;
+	const PostContent = contentComponent || Content;
 
-  return (
-    <Container style={{ marginTop: '3rem', marginBottom: '3rem' }}>
-      <SEO title={title} description={description} />
+	return (
+		<Container style={{ marginTop: '3rem', marginBottom: '3rem' }}>
+			<SEO title={title} description={description} />
 
-      <h1>{title}</h1>
-      <p>{description}</p>
+			<h1>{title}</h1>
+			<p>{description}</p>
 
-      <PostContent content={content} />
+			<PostContent content={content} />
 
-      <Segment vertical>
-        <Grid doubling columns={3}>
-          {snapshots.map(({ image, title }) => {
-            const imageUrl = !!image.childImageSharp
-              ? image.childImageSharp.fluid.src
-              : image;
-            return (
-              <Grid.Column key={imageUrl}>
-                <Image src={imageUrl} fluid />
-              </Grid.Column>
-            );
-          })}
-        </Grid>
-      </Segment>
-    </Container>
-  );
+			<Segment vertical>
+				<Grid doubling columns={3}>
+					{snapshots.map(({ image, title }) => {
+						const imageUrl = image.childImageSharp
+							? image.childImageSharp.fluid.src
+							: image;
+						return (
+							<Grid.Column key={imageUrl}>
+								<Image src={imageUrl} fluid />
+							</Grid.Column>
+						);
+					})}
+				</Grid>
+			</Segment>
+		</Container>
+	);
 }
 
 GalleryPageTemplate.propTypes = {
-  content: PropTypes.node.isRequired,
-  contentComponent: PropTypes.func,
-  description: PropTypes.string,
-  title: PropTypes.string,
-  categories: PropTypes.array,
-  snapshots: PropTypes.array,
+	content: PropTypes.node.isRequired,
+	contentComponent: PropTypes.func,
+	description: PropTypes.string,
+	title: PropTypes.string,
+	categories: PropTypes.array,
+	snapshots: PropTypes.array,
 };
 
 function GalleryPage({ data }) {
-  const { markdownRemark: post } = data;
+	const { markdownRemark: post } = data;
 
-  return (
-    <Layout>
-      <GalleryPageTemplate
-        content={post.html}
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        description={post.frontmatter.description}
-        snapshots={post.frontmatter.snapshots}
-      />
-    </Layout>
-  );
+	return (
+		<Layout>
+			<GalleryPageTemplate
+				content={post.html}
+				contentComponent={HTMLContent}
+				title={post.frontmatter.title}
+				description={post.frontmatter.description}
+				snapshots={post.frontmatter.snapshots}
+			/>
+		</Layout>
+	);
 }
 
 GalleryPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
+	data: PropTypes.shape({
+		markdownRemark: PropTypes.object,
+	}),
 };
 
 export default GalleryPage;

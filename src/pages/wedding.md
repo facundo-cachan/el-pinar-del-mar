@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 結婚式
+title: Boda
 date: 2020-01-13T00:00:00.000Z
 description: >-
   神社の静かな杜に囲まれた、荘厳で厳粛な本殿式。日本の伝統、古来より受け継げられてきた美しい形でお二人の愛の誓いを・・・。

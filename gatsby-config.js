@@ -13,6 +13,7 @@ module.exports = {
     author: 'Facundo Cachan',
     facebook: 'https://www.facebook.com/ElPinarDelMar/',
     instagram: 'https://www.instagram.com/el_pinar_del_mar/',
+    twitter: 'https://twitter.com/pinar_mar',
   },
   plugins: [
     {
@@ -70,27 +71,27 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      resolve: 'gatsby-plugin-react-helmet-canonical-urls',
       options: {
         siteUrl: process.env.SITE_URL,
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `El Pinar Del Mar`,
-        short_name: `El Pinar`,
-        start_url: `/`,
-        background_color: `#000`,
-        theme_color: `#000`,
-        display: `standalone`,
+        name: 'El Pinar Del Mar',
+        short_name: 'El Pinar',
+        start_url: '/',
+        background_color: '#000',
+        theme_color: '#000',
+        display: 'standalone',
       },
     },
-    `gatsby-plugin-advanced-sitemap`,
-    `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-offline`,
+    'gatsby-plugin-advanced-sitemap',
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-offline',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: process.env.GA_TRACKING_ID,
       },
